@@ -1,4 +1,4 @@
-# Imports
+# Imports <--- WheatleyInABox was here
 import pygame
 import math
 import random
@@ -114,7 +114,7 @@ while not done:
     # Drawing code (Describe the picture. It isn't actually drawn yet.)
     screen.fill(sky_color)
     SEE_THROUGH.fill(ck)
-    SEE_THROUGH.set_colorkey(ck)
+    SEE_THROUGH.set_colorkey(ck) # <--- WheatleyInABox was here
     
     if not day:
     #stars
