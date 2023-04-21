@@ -6,18 +6,15 @@ import random
 # Initialize game engine
 pygame.init()
 
-
 # Window
 SIZE = (800, 600)
 TITLE = "Major League Soccer"
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
-
 # Timer
 clock = pygame.time.Clock()
 refresh_rate = 60
-
 
 # Colors
 ''' add colors you use as RGB values here '''
@@ -114,12 +111,12 @@ while not done:
     # Drawing code (Describe the picture. It isn't actually drawn yet.)
     screen.fill(sky_color)
     SEE_THROUGH.fill(ck)
-    SEE_THROUGH.set_colorkey(ck) # <--- WheatleyInABox was here
+    SEE_THROUGH.set_colorkey(ck)
     
     if not day:
     #stars
         for s in stars:
-            pygame.draw.ellipse(screen, WHITE, s)
+            pygame.draw.ellipse(screen, WHITE, s) # <--- WheatleyInABox was here
 
 
 
