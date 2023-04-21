@@ -50,7 +50,6 @@ def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 20, y + 8, 10, 10])
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
 
-
 # Config
 lights_on = True
 day = True
