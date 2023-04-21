@@ -44,11 +44,11 @@ SEE_THROUGH.set_alpha(150)
 SEE_THROUGH.fill((124, 118, 135))
 
 def draw_cloud(x, y):
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y + 8, 10, 10])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 6, y + 4, 8, 8])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 10, y, 16, 16])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 20, y + 8, 10, 10])
-    pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y+8, 10, 10])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+6, y+4, 8, 8])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+10, y, 16, 16])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+20, y+8, 10, 10])
+    pygame.draw.rect(SEE_THROUGH, cloud_color, [x+6, y+8, 18, 10])
 
 # Config
 lights_on = True
