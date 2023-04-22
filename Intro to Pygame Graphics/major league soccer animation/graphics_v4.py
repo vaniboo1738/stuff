@@ -1,3 +1,4 @@
+#Valen edits start here.
 # Imports
 import pygame
 import math
@@ -116,6 +117,7 @@ while not done:
     SEE_THROUGH.fill(ck)
     SEE_THROUGH.set_colorkey(ck)
     
+    #Jarisse edits start here
     if not day:
     #stars
         for s in stars:
@@ -221,8 +223,7 @@ while not done:
     pygame.draw.ellipse(screen, GRAY, [630, 195, 20, 10])
 
     #lights
-
-        
+    
     pygame.draw.line(screen, GRAY, [590, 60], [690, 60], 2)
     pygame.draw.ellipse(screen, light_color, [590, 40, 20, 20])
     pygame.draw.ellipse(screen, light_color, [610, 40, 20, 20])
@@ -237,6 +238,7 @@ while not done:
     pygame.draw.ellipse(screen, light_color, [670, 20, 20, 20])
     pygame.draw.line(screen, GRAY, [590, 20], [690, 20], 2)
 
+    #Vanisa edits start here
     #net
     pygame.draw.line(screen, WHITE, [325, 140], [341, 200], 1)
     pygame.draw.line(screen, WHITE, [330, 140], [344, 200], 1)
