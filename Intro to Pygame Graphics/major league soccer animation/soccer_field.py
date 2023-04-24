@@ -20,15 +20,15 @@ def display_field(field_color, stripe_color):
     '''fence'''
     y = 170
     for x in range(5, 800, 30):
-        pygame.draw.polygon(screen, NIGHT_GRAY, [[x + 2, y], [x + 2, y + 15], [x, y + 15], [x, y]])
+        pygame.draw.polygon(screen, NIGHT_GRAY, [[x+2, y], [x+2, y+15], [x, y+15], [x, y]])
 
     y = 170
     for x in range(5, 800, 3):
-        pygame.draw.line(screen, NIGHT_GRAY, [x, y], [x, y + 15], 1)
+        pygame.draw.line(screen, NIGHT_GRAY, [x, y], [x, y+15], 1)
 
     x = 0
     for y in range(170, 185, 4):
-        pygame.draw.line(screen, NIGHT_GRAY, [x, y], [x + 800, y], 1)
+        pygame.draw.line(screen, NIGHT_GRAY, [x, y], [x+800, y], 1)
 
 
 def display_goal_lines():
@@ -41,7 +41,7 @@ def display_goal_lines():
     pygame.draw.line(screen, WHITE, [620, 300], [540, 220], 5)
 
     #arc at the top of the goal box
-    pygame.draw.arc(screen, WHITE, [330, 280, 140, 40], math.pi, 2 * math.pi, 5)
+    pygame.draw.arc(screen, WHITE, [330, 280, 140, 40], math.pi, 2*math.pi, 5)
 
     #6 yard line goal box
     pygame.draw.line(screen, WHITE, [310, 220], [270, 270], 3)
