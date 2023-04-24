@@ -1,4 +1,3 @@
-#Valen edits start here.
 # Imports
 import pygame
 import random
@@ -15,11 +14,10 @@ pygame.init()
 clock = pygame.time.Clock()
 refresh_rate = HERTZ
 
+# Config: Preset values for default screen
 DARKNESS = pygame.Surface(SIZE)
 DARKNESS.set_alpha(200)
 DARKNESS.fill((0, 0, 0)) 
-
-# Config
 lights_on = True
 day = True
     
@@ -38,8 +36,8 @@ while not done:
             elif event.key == pygame.K_d:
                 day = not day
 
-    # Game logic (Check for collisions, update points, etc.)
-    ''' leave this section alone for now ''' 
+    # Game logic & event actions (Check for collisions, update points, etc.)
+    ''' Describes action toggles from above ''' 
     if lights_on:
         light_color = YELLOW
     else:
@@ -67,7 +65,6 @@ while not done:
     SEE_THROUGH.fill(ck)
     SEE_THROUGH.set_colorkey(ck)
     
-
     # draw the field with goal box and fence
     # Comment this out and run it :) for fun
     display_field(field_color, stripe_color)
@@ -92,7 +89,6 @@ while not done:
     display_corner_flag()
     display_stands()
     
-   
     # DARKNESS
     if not day and not lights_on:
         screen.blit(DARKNESS, (0, 0))    
@@ -105,7 +101,6 @@ while not done:
 
     # Update screen (Actually draw the picture in the window.)
     pygame.display.flip()
-
 
     # Limit refresh rate of game loop 
     clock.tick(refresh_rate)
