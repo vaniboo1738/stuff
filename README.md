@@ -1,6 +1,6 @@
-# Refactoring Copy of johoule's *stuff*
+# Refactoring Copy of *johoule's stuff*
 
-This repo is used for refactoring file name graphics_v4.py, all adjacent files can be found:
+This repo fork is used for refactoring file name graphics_v4.py, all adjacent files can be found:
 
 > stuff/Intro to Pygame Graphics/major league soccer animation 
 
