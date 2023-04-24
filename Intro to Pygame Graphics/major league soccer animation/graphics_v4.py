@@ -14,7 +14,7 @@ pygame.init()
 clock = pygame.time.Clock()
 refresh_rate = HERTZ
 
-# Config: Preset values for default screen
+# Config: Preset values for default screen/night time view
 DARKNESS = pygame.Surface(SIZE)
 DARKNESS.set_alpha(200)
 DARKNESS.fill((0, 0, 0)) 
