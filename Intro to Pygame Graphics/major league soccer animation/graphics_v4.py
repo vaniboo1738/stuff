@@ -54,11 +54,11 @@ while not done:
         stripe_color = NIGHT_GREEN
         cloud_color = NIGHT_GRAY
 
-    for c in clouds:
-        c[0] -= 0.5
-        if c[0] < -100:
-            c[0] = random.randrange(800, 1600)
-            c[1] = random.randrange(0, 150)
+    for cloud in clouds:
+        cloud[0] -= 0.5
+        if cloud[0] < -100:
+            cloud[0] = random.randrange(800, 1600)
+            cloud[1] = random.randrange(0, 150)
             
     # Drawing code (Describe the picture. It isn't actually drawn yet.)
     screen.fill(sky_color)
@@ -76,8 +76,8 @@ while not done:
         # draw the sun...
         draw_sun()
 
-    for c in clouds:
-        draw_cloud(c[0], c[1], cloud_color)
+    for cloud in clouds:
+        draw_cloud(cloud[0], cloud[1], cloud_color)
     screen.blit(SEE_THROUGH, (0, 0)) 
 
     # this display order does matter as it determines if the object is infront or behind one another
