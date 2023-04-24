@@ -9,15 +9,12 @@ SEE_THROUGH.set_alpha(150)
 # Not sure what this does. Maybe its the cloud color but it gets over writen? by cloud_color
 #SEE_THROUGH.fill((124, 118, 135))
 
-
 stars = []
 for n in range(200):
     x = random.randrange(0, width) #if the board game size changes, so will this and so the stars will be consistent
     y = random.randrange(0, height/3) #same with this. If the board size changes the stars will match the new display
     r = random.randrange(1, 2)
     stars.append([x, y, r, r])
-
-
 
 clouds = []
 for i in range(20):
@@ -28,14 +25,12 @@ for i in range(20):
     #y = random.randrange(0,height) This might be better
     clouds.append([x, y])
 
-
 def draw_cloud(x, y, cloud_color):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y+8, 10, 10])
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+6, y+4, 8, 8])
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+10, y, 16, 16])
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+20, y+8, 10, 10])
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x+6, y+8, 18, 10]) 
-    
     
 def draw_stars_moon(sky_color):
     pygame.draw.ellipse(screen, WHITE, [520, 50, 40, 40]) # Change sun to white and shape it
