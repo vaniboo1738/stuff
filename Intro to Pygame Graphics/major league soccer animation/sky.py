@@ -30,11 +30,11 @@ for i in range(20):
 
 
 def draw_cloud(x, y, cloud_color):
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y + 8, 10, 10])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 6, y + 4, 8, 8])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 10, y, 16, 16])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 20, y + 8, 10, 10])
-    pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10]) 
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y+8, 10, 10])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+6, y+4, 8, 8])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+10, y, 16, 16])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+20, y+8, 10, 10])
+    pygame.draw.rect(SEE_THROUGH, cloud_color, [x+6, y+8, 18, 10]) 
     
     
 def draw_stars_moon(sky_color):
