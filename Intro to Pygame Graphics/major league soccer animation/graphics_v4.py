@@ -240,8 +240,9 @@ while not done:
 
     #Vanisa edits start here
     #net
-    for x in range(324, 476, 400):
-        pygame.draw.line(screen, WHITE [x, 140], [x, 200], 1)
+    for i in range(35):
+        for x in range (324, 476, 400):
+            pygame.draw.line(screen, WHITE [x, 140], [x, 200], 1)
 
     #net part 2
     pygame.draw.line(screen, WHITE, [320, 140], [324, 216], 1)
