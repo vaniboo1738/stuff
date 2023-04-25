@@ -26,17 +26,17 @@ for i in range(20):
     clouds.append([x, y])
 
 def draw_cloud(x, y, cloud_color):
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y+8, 10, 10])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+6, y+4, 8, 8])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y+8, 10, 10]) #Creates an individual cloud by combining ellipses and a rectangle
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+6, y+4, 8, 8]) #to give it its shape
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+10, y, 16, 16])
-    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+20, y+8, 10, 10])
+    pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x+20, y+8, 10, 10]) #Must be called more than once
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x+6, y+8, 18, 10]) 
     
 def draw_stars_moon(sky_color):
     pygame.draw.ellipse(screen, WHITE, [520, 50, 40, 40]) # Change sun to white and shape it
     pygame.draw.ellipse(screen, sky_color, [530, 45, 40, 40]) # Color a portion of the circle to make it look crescent
-    for s in stars: #
+    for s in stars: # Taking the stars setup and creating them on the screen
         pygame.draw.ellipse(screen, WHITE, s)
 
 def draw_sun():
-    pygame.draw.ellipse(screen, BRIGHT_YELLOW, [520, 50, 40, 40])
+    pygame.draw.ellipse(screen, BRIGHT_YELLOW, [520, 50, 40, 40]) #Change moon to bright yellow ellipse
