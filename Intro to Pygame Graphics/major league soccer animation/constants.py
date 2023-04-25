@@ -26,5 +26,6 @@ SIZE = (width, height)
 HERTZ = 60
 TITLE = "Major League Soccer"
 
+# Window size & name display
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
