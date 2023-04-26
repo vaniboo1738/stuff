@@ -1,6 +1,6 @@
 # Refactoring Copy of *johoule's stuff* (CS2520)
 
-### GROUP MEMBERS: Jarisse Escubido, INSERT NAME, Val DeLeon
+### GROUP MEMBERS: Jarisse Escubido, Vanisa Suadprathon, Val DeLeon
 
 ## __Assignment Instructions__
 For this week's assignment, you will be working in a group of 2-4 students to refactor a project provided by your instructor. Your objective is to modify the code in a way that allows for easy modifications such as altering object locations, quantities, and sizes. The main goal of this assignment is to enable the project to be quickly adapted to meet various requirements or design preferences.
